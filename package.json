@@ -1,0 +1,36 @@
+{
+  "name": "rn-performance-report",
+  "version": "1.2.8",
+  "description": "A CLI tool to analyze React Native code for performance and render anti-patterns",
+  "keywords": [
+    "react-native",
+    "performance",
+    "cli",
+    "render",
+    "optimization",
+    "linter"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "src/scanner.js",
+  "type": "module",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "bin": {
+    "rn-performance-report": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "glob": "^11.0.0",
+    "inquirer": "^9.2.12",
+    "openai": "^4.20.1"
+  }
+}
