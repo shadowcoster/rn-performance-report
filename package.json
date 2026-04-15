@@ -16,15 +16,15 @@
     "optimization",
     "linter"
   ],
-  "author": "Your Name",
+  "author": "Mayank Mehra",
   "license": "MIT",
-  "homepage": "https://github.com/your-username/rn-performance-report#readme",
+  "homepage": "https://github.com/shadowcoster/rn-performance-report#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/rn-performance-report.git"
+    "url": "git+https://github.com/shadowcoster/rn-performance-report.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/rn-performance-report/issues"
+    "url": "https://github.com/shadowcoster/rn-performance-report/issues"
   },
   "main": "src/scanner.js",
   "type": "module",

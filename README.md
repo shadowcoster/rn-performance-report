@@ -119,7 +119,7 @@ describe('Button Component', () => {
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! 
-Feel free to check the [issues page](https://github.com/your-username/rn-performance-report/issues) if you want to contribute.
+Feel free to check the [issues page](https://github.com/shadowcoster/rn-performance-report/issues) if you want to contribute.
 
 ## ⭐ Support
 If this tool helped you save time or improve your app, please give it a ⭐️ on GitHub! It helps with discoverability and encourages further development.
