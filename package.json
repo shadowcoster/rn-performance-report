@@ -1,17 +1,31 @@
 {
   "name": "rn-performance-report",
-  "version": "1.2.8",
-  "description": "A CLI tool to analyze React Native code for performance and render anti-patterns",
+  "version": "1.2.9",
+  "description": "Analyze performance, detect anti-patterns, and auto-generate AI tests for React Native apps.",
   "keywords": [
     "react-native",
-    "performance",
+    "react native performance",
+    "react-native testing",
+    "jest react native",
+    "react-native cli tool",
+    "test generator",
+    "performance analyzer",
+    "developer tools",
+    "ai testing",
     "cli",
-    "render",
     "optimization",
     "linter"
   ],
   "author": "Your Name",
   "license": "MIT",
+  "homepage": "https://github.com/your-username/rn-performance-report#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/rn-performance-report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/rn-performance-report/issues"
+  },
   "main": "src/scanner.js",
   "type": "module",
   "files": [
