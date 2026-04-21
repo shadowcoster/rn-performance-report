@@ -70,11 +70,22 @@ export const generateTestCase = async (filePath) => {
           message: 'Enter your OpenAI API Key for AI Test Generation:',
           mask: '*'
         }]);
-        cachedApiKey = answers.apiKey;
+        cachedApiKey = answers.apiKey?.trim();
+
+        if (!cachedApiKey) {
+          console.error(chalk.red('❌ No OpenAI API key provided. Breaking the generation flow.'));
+          process.exit(1);
+        }
       }
 
-      finalCode = await generateAITest(summary, cachedApiKey);
-      console.log(chalk.green('✅ Generated via AI'));
+      try {
+        finalCode = await generateAITest(summary, cachedApiKey);
+        console.log(chalk.green('✅ Generated via AI'));
+      } catch (aiError) {
+        console.error(chalk.red(`❌ AI Generation Error: ${aiError.message}`));
+        console.log(chalk.yellow('⚠️ Breaking the flow to prevent further failures.'));
+        process.exit(1);
+      }
     
     } else {
       console.log(chalk.gray(`⚡ Simple component framework verified. Processing via native AST logic...`));
